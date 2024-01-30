@@ -1,0 +1,1 @@
+Purely illustrative site as a parody of deplacemaison using the penguin club universe
