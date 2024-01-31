@@ -1,15 +1,13 @@
 import Cursor from "./components/Cursor"
-import { Text } from "./style/common"
+import HeaderSection from "./components/Sections/HeaderSection"
+import { AppContainer, Text } from "./style/common"
 
 function App() {
-
   return (
-    <>
+    <AppContainer>
       <Cursor/>
-      <Text size={32} font={'poorStory'} weight={900}>
-        isso é um TESTE
-      </Text>
-    </>
+      <HeaderSection/>
+    </AppContainer>
   )
 }
 

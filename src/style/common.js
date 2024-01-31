@@ -1,5 +1,11 @@
 import styled from "styled-components"
 
+export const AppContainer = styled.div`
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-color: ${(props) => props.theme.colors.white};
+`
 
 const FontObject = {
   gh: `'Gloria Hallelujah', cursive`,
@@ -14,5 +20,6 @@ export const Text = styled.span((props) => ({
   fontWeight: props.weight ? `${props.weight}` : 'normal',
   textAlign: props.align ? props.align : 'start',
   color: props.color ? props.color: props.theme.colors.black,
-  userSelect: 'none'
+  userSelect: 'none',
+  lineHeight: 1
 }));

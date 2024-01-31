@@ -1,10 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
-  html,body {
-      background-color: ${(props) => props.theme.colors.white};
-  }
-
   a {
       color: inherit;
       text-decoration: none;
