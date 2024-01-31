@@ -13,5 +13,6 @@ export const Text = styled.span((props) => ({
   fontSize: props.size ? `${props.size}px` : '16px',
   fontWeight: props.weight ? `${props.weight}` : 'normal',
   textAlign: props.align ? props.align : 'start',
-  color: props.color ? props.color: props.theme.colors.black
+  color: props.color ? props.color: props.theme.colors.black,
+  userSelect: 'none'
 }));
