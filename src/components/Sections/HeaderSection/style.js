@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.section`
   margin-top: 98px;
-  width: 100%;
+  width: 85%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start;
-  padding: 0 20vw;
 
   .second-line {
     display: flex;
