@@ -1,30 +1,19 @@
 import styled from "styled-components"
 
 export const CursorContent = styled.div`
-  #cursor {
-  background-color: black;
-  border-radius: 40px;
-  
-  height: 40px;
-  width: 40px;
-  
-  display: block;
-  position: absolute;
-  top: 25px;
-  left: 0;
-  
-  filter: invert(2);
-  mix-blend-mode: difference;
-}
+  filter: url(#goo);
+  position: absolute !important;
+  z-index: 999 !important;
+  pointer-events: none;
+  mix-blend-mode: difference !important;
+`
 
-@keyframes blink {
-  50% {
-    opacity: 0.0;
-  }
-}
-@-webkit-keyframes blink {
-  50% {
-    opacity: 0.0;
-  }
-}
+export const CursorModify = styled.div`
+  position: absolute !important;
+  background-color: ${props=>props.theme.colors.white};
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999 !important;
+  width: ${props=> props.size+'px'};
+  height: ${props=> props.size+'px'};
 `
