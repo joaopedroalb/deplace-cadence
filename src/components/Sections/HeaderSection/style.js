@@ -8,6 +8,16 @@ export const HeaderContainer = styled.section`
   align-items: flex-end;
   justify-content: flex-start;
 
+  @media (width < 920px) {
+    width: 100%;
+    align-items: center;
+    padding: 0 24px;
+
+    img {
+      max-width: 44vw;
+    }
+  }
+
   .second-line {
     display: flex;
     align-items: center;
@@ -19,11 +29,18 @@ export const HeaderContainer = styled.section`
     &::before {
       content: '2024';
       position: absolute;
-      top: 38px;
-      left: 24px;
-      font-size: 48px;
+      top: 65%;
+      left: 10%;
+      font-size: clamp(2rem, 0.6212rem + 4.521vi, 4.125rem);
       font-weight: 500;
     }
+  }
+
+  .btn-row {
+    margin-top: 58px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
   }
 `
 
@@ -33,6 +50,7 @@ export const ImageContainer = styled.div`
   align-items: center;
   gap: 16px;
   position: relative;
+  margin-top: 16px;
 
   .equal-image {
     position: absolute;
@@ -45,11 +63,13 @@ export const ImageContainer = styled.div`
 
 export const ImageBox = styled.div`
   background-color: #d8c7b5;
-  border: 3px solid ${props=>props.theme.colors.black};
+  border: 4px solid ${props=>props.theme.colors.black};
   position: relative;
   img {
-    height: 386px;
-    width: 280px;
+    max-height: 390px;
+    height: 65vw;
+    width: calc(28vw + 3rem);;
+    max-width: 250px;
   }
 
   .photo-number, .photo-desc {

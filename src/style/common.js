@@ -17,7 +17,7 @@ const FontObject = {
 
 export const Text = styled.span((props) => ({
   fontFamily: props.font && FontObject[props.font] ? FontObject[props.font] : FontObject.openSans,
-  fontSize: props.size ? `${props.size}px` : '16px',
+  fontSize: props.size ? `clamp(${props.size[0]}rem, ${props.size[1]}, ${props.size[2]}rem)` : '16px',
   fontWeight: props.weight ? `${props.weight}` : 'normal',
   textAlign: props.align ? props.align : 'start',
   color: props.color ? props.color: props.theme.colors.black,

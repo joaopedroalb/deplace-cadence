@@ -6,6 +6,10 @@ export const CursorContent = styled.div`
   z-index: 999 !important;
   pointer-events: none;
   mix-blend-mode: difference !important;
+
+  @media (width < 920px) {
+    display: none;
+  }
 `
 
 export const CursorModify = styled.div`

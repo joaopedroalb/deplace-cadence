@@ -4,14 +4,15 @@ import { HeaderContainer, ImageBox, ImageContainer } from './style'
 import ManPhoto from '../../../assets/man.png'
 import WomenPhoto from '../../../assets/women.png'
 import EqualPhoto from '../../../assets/equal.svg'
+import CircleBtn from '../../common/CircleBtn'
 
 export default function HeaderSection() {
   return (
     <HeaderContainer>
-      <Text font={'os'} size={133} weight={500}>SPRING</Text>
+      <Text font={'os'} size={[4,'-0.1132rem + 10.8719vi',8.3125]} weight={500}>SPRING</Text>
       <div className='second-line'>
-        <Text font={'os'} size={133} weight={500}>SUMMER</Text>
-        <Text font={'os'} size={62} weight={400} className='col-text'>COLL.</Text>
+        <Text font={'os'} size={[4,'-0.1132rem + 10.8719vi',8.3125]} weight={500}>SUMMER</Text>
+        <Text font={'os'} size={[2,'0.6212rem + 4.521vi',4.125]} weight={400} className='col-text'>COLL.</Text>
       </div>
       <ImageContainer>
         <ImageBox>
@@ -28,6 +29,9 @@ export default function HeaderSection() {
 
         <img src={EqualPhoto} className='equal-image'/>
       </ImageContainer>
+      <div className='btn-row'>
+        <CircleBtn message={'EXPLORE'}/>
+      </div>
     </HeaderContainer>
   )
 }
