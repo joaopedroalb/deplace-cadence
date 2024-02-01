@@ -6,11 +6,6 @@ export default function Slider() {
 
   const IS_MOBILE = window.innerWidth <= 885
 
-  console.log({
-    widht: window.innerWidth,
-    IS_MOBILE
-  })
-
   const Slide = () => {
     return (
         <div div class="slide">
