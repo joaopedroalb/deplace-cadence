@@ -8,7 +8,7 @@ export const SliderContainer = styled.div`
   border-left: none;
   border-right: none;
   margin-top: 68px;
-  height: 4.5vw;
+  height: calc(2.75vw + 1.4rem);
   
   display: flex;
   align-items: center;
@@ -17,7 +17,6 @@ export const SliderContainer = styled.div`
 		display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
     flex: 1;
 	}
 
@@ -25,11 +24,12 @@ export const SliderContainer = styled.div`
     width: 100%;
     display: flex;
     padding: 8px 0;
-    animation: 6s slide infinite linear;
+    animation: ${props=> props.isMobile ? '3s slide infinite linear' : '5s slide infinite linear'};
     position: absolute;
 
     .textSlide {
-      font-size: 2.5vw;
+      font-size: calc(1.95vw + .6rem);
+      white-space: nowrap;
     }
   }
 
@@ -45,17 +45,18 @@ export const SliderContainer = styled.div`
     position: relative;
     display: flex;
     align-items: center;
+    margin: 0 28px 0 16px;
 
     &::before, &::after {
       content: '';
-      background-color: ${props=>props.theme.colors.black};;
-      min-width: 8px;
-      min-height: 8px;
+      background-color: ${props=>props.theme.colors.black};
+      min-width: ${props=>props.isMobile ? '4px' : '8px'};
+      min-height: ${props=>props.isMobile ? '4px' : '8px'};
       border-radius: 8px;
       position: absolute;
     }
-    &::before { left: -14px;}
-    &::after { right: -14px;}
+    &::before { left: -6%;}
+    &::after { right: -6%;}
   }
   
 

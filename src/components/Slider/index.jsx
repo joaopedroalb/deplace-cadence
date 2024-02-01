@@ -4,6 +4,13 @@ import { Text } from '../../style/common'
 
 export default function Slider() {
 
+  const IS_MOBILE = window.innerWidth <= 885
+
+  console.log({
+    widht: window.innerWidth,
+    IS_MOBILE
+  })
+
   const Slide = () => {
     return (
         <div div class="slide">
@@ -14,14 +21,14 @@ export default function Slider() {
   }
 
   return (
-    <SliderContainer>
+    <SliderContainer isMobile={IS_MOBILE}>
       <div className='firstLine'>
         <Slide/>  
-        <Slide/>  
+        {!IS_MOBILE && <Slide/>}
       </div>
       <div className='secondLine'>
         <Slide/>  
-        <Slide/>  
+        {!IS_MOBILE && <Slide/>}  
       </div>
     </SliderContainer>
   )
