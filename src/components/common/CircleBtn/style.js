@@ -7,6 +7,8 @@ export const CircleBtnContainer = styled.div`
   position: relative;
   gap: 8px;
   cursor: pointer;
+
+  user-select: none;
 `
 
 export const MessageBtn = styled.span`
