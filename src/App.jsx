@@ -11,6 +11,7 @@ function App() {
       <HeaderSection/>
       <Slider/>
       <About/>
+      <div style={{minHeight: '300px'}}/>
     </AppContainer>
   )
 }

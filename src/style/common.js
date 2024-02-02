@@ -22,5 +22,5 @@ export const Text = styled.span((props) => ({
   textAlign: props.align ? props.align : 'start',
   color: props.color ? props.color: props.theme.colors.black,
   userSelect: 'none',
-  lineHeight: 1
+  lineHeight: props.lineHeight ? props.lineHeight : '1',
 }));
