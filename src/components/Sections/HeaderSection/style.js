@@ -48,6 +48,7 @@ export const ImageContainer = styled.div`
   display: flex;
   width: auto;
   align-items: center;
+  justify-content: center;
   gap: 16px;
   position: relative;
   margin-top: 16px;
@@ -56,7 +57,6 @@ export const ImageContainer = styled.div`
     position: absolute;
     top:50%;
     width: 123px;
-    left: 39%;
     mix-blend-mode: multiply;
   }
 `
