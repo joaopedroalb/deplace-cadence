@@ -8,7 +8,7 @@ export const SliderContainer = styled.div`
   border-left: none;
   border-right: none;
   margin-top: 68px;
-  height: calc(2.75vw + 1.4rem);
+  height: calc(1.95vw + 2.85rem);
   
   display: flex;
   align-items: center;
@@ -28,7 +28,7 @@ export const SliderContainer = styled.div`
     position: absolute;
 
     .textSlide {
-      font-size: calc(1.95vw + .6rem);
+      font-size: calc(1.95vw + .8rem);
       white-space: nowrap;
     }
   }
