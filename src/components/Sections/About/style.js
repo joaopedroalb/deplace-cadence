@@ -20,11 +20,11 @@ export const TextContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 28px;
+  gap: 24px;
   max-width: 750px;
 
   .title {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     position: relative;
 
     &::before {
@@ -39,7 +39,7 @@ export const TextContainer = styled.div`
   }
 
   b {
-    font-weight: 400;
+    font-weight: 500;
     position: relative;
     &::before {
       content: '';
