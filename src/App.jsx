@@ -1,3 +1,4 @@
+import Carousel from "./components/Carousel"
 import Cursor from "./components/Cursor"
 import About from "./components/Sections/About"
 import HeaderSection from "./components/Sections/HeaderSection"
@@ -11,6 +12,7 @@ function App() {
       <HeaderSection/>
       <Slider/>
       <About/>
+      <Carousel/>
       <div style={{minHeight: '300px'}}/>
     </AppContainer>
   )
