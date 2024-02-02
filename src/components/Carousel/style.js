@@ -65,18 +65,31 @@ export const ProductCard = styled.div`
     font-weight: 600;
     font-family: 'Open Sans';
     letter-spacing: -0.5px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url(/coin1.png);
+      background-repeat: no-repeat;
+      background-size: 24px;
+      right: -28px;
+      top: 2px;
+      transform: scale(-1, 1)
+    }
   }
 
   .cost {
     font-size: ${props=>props.hasPromo ? '20px' : '28px'};
     font-weight: ${props=>props.hasPromo ? '500' : '600'};
 
-    position: relative;
     width: fit-content;
     display: flex;
     align-items: center;
 
-    &::before {
+    &::after {
       content: '';
       width: calc(100% + 8px);
       height: 2px;
@@ -86,6 +99,11 @@ export const ProductCard = styled.div`
       position: absolute;
       display: ${props=>props.hasPromo ? 'block' : 'none'};
     }
+
+    &::before {
+      background-size: ${props=>props.hasPromo ? '16px' : '24px'};
+    }
+
   }
 
   .cost-promo {
