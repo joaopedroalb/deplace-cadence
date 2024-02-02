@@ -24,12 +24,15 @@ export const MessageBtn = styled.span`
     bottom: -5%;
     border-radius: 5px;
     opacity: 0;
+    display: flex;
+    right: 0;
 
     transition: 400ms;
   }
 
   &:hover {
     &::before {
+      left: 0;
       opacity: 1;
       width: 100%;
     }
@@ -43,12 +46,11 @@ export const CircleContent = styled.div`
   justify-content: center;
   background-color: red;
   width: 40px;
-
-  transition: 400ms;
-
+  transform: rotate(1deg) scale(1);
+  transition: 400ms ease;
+  
   &:hover {
-    animation:  500ms spin ease ;
-    transform: scale(1.35);
+    transform: rotate(359deg) scale(1.25);
   }
 
   #arrow-btn, #circle-btn {
@@ -58,9 +60,5 @@ export const CircleContent = styled.div`
   #arrow-btn {
     height: 20px;
   }
-
-  @keyframes spin {
-    0% { transform: rotate(1deg) scale(1.35);}
-    100% { transform: rotate(359deg) scale(1.35);}
-  }
+  
 `
