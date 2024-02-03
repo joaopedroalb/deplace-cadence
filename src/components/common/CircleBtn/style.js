@@ -16,6 +16,7 @@ export const MessageBtn = styled.span`
   position: relative;
   width: fit-content;
   color: ${props=>props.theme.colors.black};
+  letter-spacing: -0.75px;
 
   &::before {
     content: '';

@@ -20,4 +20,5 @@ export const CursorModify = styled.div`
   z-index: 999 !important;
   width: ${props=> props.size+'px'};
   height: ${props=> props.size+'px'};
+  overflow: hidden;
 `

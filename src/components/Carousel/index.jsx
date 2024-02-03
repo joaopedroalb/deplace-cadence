@@ -5,6 +5,7 @@ import { Text } from '../../style/common'
 
 import { ScrollContainer } from 'react-indiana-drag-scroll';
 import 'react-indiana-drag-scroll/dist/style.css'
+import CircleBtn from '../common/CircleBtn';
 
 
 export default function Carousel() {
@@ -38,6 +39,9 @@ export default function Carousel() {
           })
         }
       </ScrollContainer>
+      <div className='btn-row'>
+        <CircleBtn message='SHOP ALL'/>
+      </div>
     </CarouselContainer>
   )
 }

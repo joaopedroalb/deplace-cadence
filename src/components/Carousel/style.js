@@ -2,6 +2,9 @@ import styled from "styled-components"
 
 export const CarouselContainer = styled.section`
   margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
   
   .carousel {
     width: 100%;
@@ -9,14 +12,23 @@ export const CarouselContainer = styled.section`
     display: flex;
     min-height: 90px;
     gap: 18px;
-    padding: 0 12px;
+    padding: 0 28px;
   }
+
+  .btn-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 28px;
+  }
+
 
 `
 
 export const ProductCard = styled.div`
-  border: 2px solid #141414;
-  background-color: #e7d6c4;
+  border: 2px solid ${props=>props.theme.colors.black};;
+  background-color: ${props=>props.theme.colors.beige};;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,9 +86,9 @@ export const ProductCard = styled.div`
       height: 100%;
       background-image: url(/coin1.png);
       background-repeat: no-repeat;
-      background-size: 24px;
+      background-size: 20px;
       right: -28px;
-      top: 2px;
+      top: 4px;
       transform: scale(-1, 1)
     }
   }
@@ -92,7 +104,7 @@ export const ProductCard = styled.div`
     &::after {
       content: '';
       width: calc(100% + 8px);
-      height: 2px;
+      height: 1.5px;
       background-color: #141414;
       border-radius: 8px;
       left: -4px;
@@ -101,7 +113,9 @@ export const ProductCard = styled.div`
     }
 
     &::before {
-      background-size: ${props=>props.hasPromo ? '16px' : '24px'};
+      background-size: ${props=>props.hasPromo ? '14px' : '20px'};
+      right: ${props=>props.hasPromo ? '-22px' : '-28px'};
+      top: ${props=>props.hasPromo ? '2px' : '4px'};
     }
 
   }
