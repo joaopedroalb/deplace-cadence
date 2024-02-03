@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const CarouselContainer = styled.section`
-  margin-top: 48px;
+  margin-top: 110px;
   display: flex;
   flex-direction: column;
   gap: 48px;

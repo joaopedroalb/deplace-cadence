@@ -56,20 +56,19 @@ export const ImageContainer = styled.div`
   .equal-image {
     position: absolute;
     top:50%;
-    width: 123px;
+    width: calc(16vw + 1rem);
     mix-blend-mode: multiply;
   }
 `
 
 export const ImageBox = styled.div`
-  background-color: #d8c7b5;
+  background-color: ${props=>props.theme.colors.beige};
   border: 4px solid ${props=>props.theme.colors.black};
   position: relative;
   img {
-    max-height: 390px;
-    height: 65vw;
-    width: calc(28vw + 3rem);;
-    max-width: 250px;
+    width: 30.5vw;
+    height: 44vw;
+    max-width: 31.5vw;
   }
 
   .photo-number, .photo-desc {

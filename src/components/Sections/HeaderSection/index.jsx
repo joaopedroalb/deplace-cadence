@@ -9,10 +9,10 @@ import CircleBtn from '../../common/CircleBtn'
 export default function HeaderSection() {
   return (
     <HeaderContainer>
-      <Text font={'os'} size={[4,'-0.1132rem + 10.8719vi',8.3125]} weight={500}>SPRING</Text>
+      <Text font={'os'} size={[4,'-0.1132rem + 10.8719vi',16.625]} weight={500}>SPRING</Text>
       <div className='second-line'>
-        <Text font={'os'} size={[4,'-0.1132rem + 10.8719vi',8.3125]} weight={500}>SUMMER</Text>
-        <Text font={'os'} size={[2,'0.6212rem + 4.521vi',4.125]} weight={400} className='col-text'>COLL.</Text>
+        <Text font={'os'} size={[4,'-0.1132rem + 10.8719vi',16.625]} weight={500}>SUMMER</Text>
+        <Text font={'os'} size={[2,'0.6212rem + 4.521vi',8.25]} weight={400} className='col-text'>COLL.</Text>
       </div>
       <ImageContainer>
         <ImageBox>

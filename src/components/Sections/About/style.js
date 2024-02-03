@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const AboutContainer = styled.section`
   margin-top: 72px;
-  width: 85%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
