@@ -11,11 +11,11 @@ export default function HeaderSection() {
     <HeaderContainer>
       <TextContainer>
         <div className='text-line'>
-          <Text font={'os'} size={[4,'-0.1132rem + 10.8719vi',16.625]} weight={600} className='animation-text text1'>SPRING,</Text>
+          <Text font={'os'} size={[3.25,'-0.1132rem + 10.8719vi',16.625]} weight={600} className='animation-text text1'>SPRING,</Text>
         </div>
         <div className='text-line'>
-          <Text font={'os'} size={[4,'-0.1132rem + 10.8719vi',16.625]} weight={600} className='animation-text text2'>SUMMER</Text>
-          <Text font={'os'} size={[2,'0.5212rem + 2.821vi',3.6]} weight={400} className='col-text'>COLL.</Text>
+          <Text font={'os'} size={[3.25,'-0.1132rem + 10.8719vi',16.625]} weight={600} className='animation-text text2'>SUMMER</Text>
+          <Text font={'os'} size={[1.5,'0.5212rem + 2.821vi',3.6]} weight={400} className='col-text'>COLL.</Text>
         </div>
       </TextContainer>
       <ImageContainer>

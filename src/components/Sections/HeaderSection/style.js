@@ -53,7 +53,7 @@ export const TextContainer = styled.div`
       position: absolute;
       top: 65%;
       left: 10%;
-      font-size: clamp(2rem, 0.5212rem + 2.821vi, 3.6rem);
+      font-size: clamp(1.5rem, 0.5212rem + 2.821vi, 3.6rem);
       font-weight: 500;
     }
   }
