@@ -55,13 +55,13 @@ export default function Cursor() {
           </filter>
         </defs>
       </svg>
-      <CursorModify className="cursor" ref={cursorRef} size={22.5}/>
-      <CursorModify className="cursor" ref={cursorRef2} size={20}/>
-      <CursorModify className="cursor" ref={cursorRef3} size={18.5}/>
-      <CursorModify className="cursor" ref={cursorRef4} size={16}/>
-      <CursorModify className="cursor" ref={cursorRef5} size={14.5}/>
-      <CursorModify className="cursor" ref={cursorRef6} size={12}/>
-      <CursorModify className="cursor" ref={cursorRef7} size={10}/>
+      <CursorModify className="cursor" ref={cursorRef} size={24}/>
+      <CursorModify className="cursor" ref={cursorRef2} size={22}/>
+      <CursorModify className="cursor" ref={cursorRef3} size={20}/>
+      <CursorModify className="cursor" ref={cursorRef4} size={18}/>
+      <CursorModify className="cursor" ref={cursorRef5} size={16}/>
+      <CursorModify className="cursor" ref={cursorRef6} size={14}/>
+      <CursorModify className="cursor" ref={cursorRef7} size={12}/>
     </CursorContent>
   )
 }
